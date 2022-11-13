@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_status_bar_list_quote"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <ImageView
+            android:id="@+id/bt_back"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:alpha="0.85"
+            android:padding="@dimen/_13sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/LatoRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:alpha="0.85"
+            android:text="My gallery"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_my_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_toolbar"
+        android:layout_margin="@dimen/_2sdp"></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

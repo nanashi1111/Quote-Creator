@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FontPainter">
+        <item name="android:fontFamily">@font/painter</item>
+    </style>
+
+    <style name="LatoRegular">
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="LatoThin">
+        <item name="fontPath">fonts/Lato-Thin.ttf</item>
+    </style>
+
+    <style name="QFont">
+        <item name="android:fontFamily">@font/f_42</item>
+    </style>
+
+    <style name="QFont24">
+        <item name="android:fontFamily">@font/f_24</item>
+    </style>
+    <style name="QFont13">
+        <item name="android:fontFamily">@font/f_13</item>
+    </style>
+
+    <style name="LatoSemibold">
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+
+    <style name="WildYouth_Regular__new">
+        <item name="android:fontFamily">@font/wildyouth_regular__new</item>
+    </style>
+
+    <style name="QuickSandBold">
+        <item name="android:fontFamily">@font/quicksand_bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Quote creator</string>
+    <string name="label_brush">Brush</string>
+    <string name="label_emoji">Emoji</string>
+    <string name="label_sticker">Sticker</string>
+    <string name="label_eraser">Eraser</string>
+    <string name="label_text">Text</string>
+    <string name="label_filter">Filter</string>
+    <string name="label_adjust">Adjust</string>
+    <string name="label_border">Border</string>
+
+    <string name="test_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel enim ipsum. Vivamus dictum imperdiet nulla non cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque interdum posuere pharetra. Curabitur dapibus mauris eget vulputate consectetur. Nunc hendrerit, erat eget vestibulum lacinia, nulla nibh iaculis nulla, mollis lobortis ipsum felis sit amet ante. Nullam porttitor, risus bibendum ultrices ultricies, elit turpis tristique leo, auctor vestibulum magna eros vitae augue. Donec nisi urna, elementum non nisl non, volutpat sodales urna. Mauris tincidunt convallis tortor, sit amet laoreet nulla suscipit vitae. Suspendisse ut arcu eros. Nunc neque nibh, lacinia euismod tortor non, mollis placerat sapien.</string>
+
+    <string name="list_categories">Categories</string>
+    <string name="share">Share</string>
+    <string name="have_to_enable_border">You have to enable showing border before selecting border</string>
+    <string name="share_loading">I am preparing your quote, please wait a few seconds...</string>
+
+    <string name="ad_app_id">ca-app-pub-9211831291242531~2572671456</string>
+</resources>

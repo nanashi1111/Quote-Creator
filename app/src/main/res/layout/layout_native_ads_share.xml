@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_ads"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEE"
+    android:padding="@dimen/_10sdp">
+
+    <com.google.android.gms.ads.nativead.NativeAdView
+        android:id="@+id/nativeAdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/app_icon"
+                android:visibility="gone"
+                app:riv_corner_radius="2sp" />
+
+            <TextView
+                android:id="@+id/tvHeadline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/ivIcon"
+                app:layout_constraintTop_toTopOf="@id/ivIcon" />
+
+
+            <TextView
+                android:id="@+id/tvAdv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Sponsored"
+                android:textColor="#555555"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toRightOf="@id/ivIcon"
+                app:layout_constraintTop_toBottomOf="@id/tvHeadline" />
+
+            <com.google.android.gms.ads.nativead.MediaView
+                android:id="@+id/adMedia"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="visible"
+                app:layout_constraintDimensionRatio="W, 9:16"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAdv" />
+
+            <TextView
+                android:id="@+id/tvBody"
+                style="@style/LatoRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:maxLines="6"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/adMedia" />
+
+            <TextView
+
+                android:id="@+id/tvCallToAction"
+                style="@style/LatoRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_call_to_action_share"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvBody" />
+
+            <!--<com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+                app:riv_corner_radius="2sp" />
+
+            <com.google.android.gms.ads.formats.MediaView
+                android:id="@+id/adMedia"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:id="@+id/tvCallToAction"
+                style="@style/LatoRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_call_to_action"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/ivIcon"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ivIcon" />
+
+            <TextView
+                android:id="@+id/tvHeadline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/ivIcon"
+                app:layout_constraintRight_toLeftOf="@id/tvCallToAction"
+                app:layout_constraintTop_toTopOf="@id/ivIcon" />
+
+            &lt;!&ndash;BELOW HEADLINE&ndash;&gt;
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="0.5"
+                android:visibility="gone"
+                app:layout_constraintLeft_toRightOf="@id/ivIcon"
+                app:layout_constraintTop_toBottomOf="@id/tvHeadline" />
+
+            <TextView
+                android:id="@+id/tvAdv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toRightOf="@id/ivIcon"
+                app:layout_constraintRight_toLeftOf="@id/tvCallToAction"
+                app:layout_constraintTop_toBottomOf="@id/tvHeadline" />
+
+            <TextView
+                android:id="@+id/tvBody"
+                style="@style/LatoRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/ivIcon" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.gms.ads.nativead.NativeAdView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

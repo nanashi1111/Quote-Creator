@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_4"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="visible"></View>
+
+    <TextView
+        style="@style/FontPainter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:text="Quote creator"
+        android:textColor="@android:color/white"
+        android:textSize="45sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_100sdp"
+        android:alpha="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bt_best_quotes"
+            style="@style/LatoRegular"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/bg_menu_button"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="Best quotes"
+            android:textColor="#E6FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/bt_create_quotes"
+            style="@style/LatoRegular"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/bg_menu_button"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="Create My Quote"
+            android:textColor="#E6FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/bt_get_idea"
+            style="@style/LatoRegular"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/bg_menu_button"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="My gallery"
+            android:textColor="#E6FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

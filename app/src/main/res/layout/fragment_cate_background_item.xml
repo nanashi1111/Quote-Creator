@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivCateBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vGuideLine"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_350sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></View>
+
+    <TextView
+        android:id="@+id/tv_quote"
+        style="@style/FontPainter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="10"
+        android:text="Family"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/vGuideLine"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

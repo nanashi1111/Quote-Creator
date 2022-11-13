@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.klmobile.quoter",
+  "variantName": "productRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 20,
+      "versionName": "1.10",
+      "enabled": true,
+      "outputFile": "app-product-release.apk"
+    }
+  ]
+}
